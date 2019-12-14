@@ -8,8 +8,7 @@ class CityInfo extends React.Component {
         <div className="card text-center">
           <div className="card-header">City Information</div>
           {this.props.city == null ? (
-            <div>Not Found</div>
-          ) : (
+            <div>Not Found</div>) : (
               <div className='card-box'>
                 <h3>
                   <img
@@ -17,41 +16,34 @@ class CityInfo extends React.Component {
                     alt=""
                   />
                   {this.props.city.data.name}
-                </h3>
                 <br />
+                </h3>
                 <div className="row">
                   <div className="col-4">
-                    Temperature (F)
-          <br />
-                    {this.props.city.data.main.temp} F
-                </div>
-                  <div className='col-4'>
-                    Presssure
-          <br />
-                    {this.props.city.data.main.pressure}
+                    Temperature (F)<br />
+                    <div className='props'>{this.props.city.data.main.temp} F</div>
                   </div>
                   <div className='col-4'>
-                    Humidity
-          <br />
-                    {this.props.city.data.main.humidity}%
-</div>
+                    Presssure<br />
+                    <div className='props'>{this.props.city.data.main.pressure}</div>
+                  </div>
+                  <div className='col-4'>
+                    Humidity<br />
+                    <div className='props'>{this.props.city.data.main.humidity}%</div>
+                  </div>
                 </div>
                 <div className='row'>
                   <div className='col-4'>
-                    Lowest Tempurature (F)
-          <br />
-                    {this.props.city.data.main.temp_min} F
-</div>
+                    Lowest Tempurature (F)<br />
+                    <div className='props'>{this.props.city.data.main.temp_min} F</div></div>
                   <div className='col-4'>
-                    Highest Tempurature (F)
-          <br />
-                    {this.props.city.data.main.temp_max} F
-</div>
+                    Highest Tempurature (F)<br />
+                    <div className='props'>{this.props.city.data.main.temp_max} F</div>
+                  </div>
                   <div className='col-4'>
-                    Wind Speed
-          <br />
-                    {this.props.city.data.wind.speed} MPH
-</div>
+                    Wind Speed<br />
+                    <div className='props'>{this.props.city.data.wind.speed} MPH</div>
+                  </div>
                 </div >
               </div >
             )}

@@ -12,11 +12,10 @@ app.use(express.static('public'));
 
 app.get('/search/:city', (req, res) => {
     cityName = req.params.city;
-    axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=7c1227810c3b24f98631189a1b4fa441&units=imperial`)
+    axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${process.env.OPEN_WEATHER_API_KEY}&units=imperial`)
             .then(response => res.send(response.data))
             .catch(err => console.log(err));
 });
 
 module.exports = app;
 
-// https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${process.env.OPEN_WEATHER_API_KEY}&units=imperial
