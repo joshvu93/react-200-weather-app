@@ -25,6 +25,7 @@
     "json-loader": "^0.5.4",
     "lodash": "^4.15.0",
     "lodash-webpack-plugin": "^0.10.2",
+    "missing": "0.0.1",
     "morgan": "^1.8.1",
     "nightmare": "^3.0.1",
     "prop-types": "^15.5.10",
@@ -33,9 +34,9 @@
     "react-redux": "^5.0.6",
     "redux": "^3.7.2",
     "redux-devtools": "^3.4.0",
+    "redux-promise-middleware": "^6.1.2",
     "serve-favicon": "^2.0.1",
-    "webpack": "^4.8.3",
-    "webpack-cli": "^3.3.9"
+    "webpack": "^4.8.3"
   },
   "devDependencies": {
     "axios-mock-adapter": "^1.6.1",
@@ -57,7 +58,8 @@
     "react-addons-test-utils": "^15.6.0",
     "sinon": "^1.17.6",
     "sinon-chai": "^2.8.0",
-    "url-loader": "^1.1.1"
+    "url-loader": "^1.1.1",
+    "webpack-cli": "^3.3.10"
   },
   "repository": {
     "type": "git",

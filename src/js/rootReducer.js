@@ -1,7 +1,8 @@
 import { combineReducers } from 'redux';
+import searchBarReducer from './SearchBar/searchBarReducer';
 
 const rootReducer = combineReducers({
-// add reducers
+    apiStore: searchBarReducer,
 });
 
 export default rootReducer;
